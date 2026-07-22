@@ -315,10 +315,8 @@ button { cursor: pointer; border: none; background: none; }
   position: relative;
 }
 .about-badge {
-  position: absolute;
-  top: -1.5rem;
-  left: 50%;
-  transform: translateX(-50%);
+  display: table;
+  margin: 0 auto 2.5rem;
   background: var(--black);
   color: var(--white);
   font-family: var(--font-cond);
@@ -1032,6 +1030,15 @@ button { cursor: pointer; border: none; background: none; }
   margin-bottom: 0.5rem;
 }
 .footer-contact p { font-size: 0.85rem; }
+.footer-contact .btn-primary {
+  background: var(--white);
+  color: var(--black);
+  border-color: var(--white);
+}
+.footer-contact .btn-primary:hover {
+  background: transparent;
+  color: var(--white);
+}
 .footer-bottom {
   max-width: 1280px;
   margin: 0 auto;
